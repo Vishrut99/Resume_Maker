@@ -1,64 +1,184 @@
 # Resume Builder
 
-## Description
-Resume Builder is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to create and manage their resumes online, providing a streamlined interface for adding personal information, education history, work experience, and skills.
+A professional, modern resume builder application that helps users create ATS-friendly resumes with ease. Built with React and Redux, featuring multiple professional templates and a user-friendly interface.
 
-The application features a responsive design, ensuring a seamless user experience across different devices. Users can register, log in securely, and save their resume data for future editing. The data is stored in MongoDB Atlas, a cloud-hosted database service.
+## 🚀 Features
 
-This repository contains the frontend and backend code for the Resume Builder project.
+- **Professional Templates**: Multiple hand-crafted resume templates optimized for different industries
+- **ATS-Friendly**: Resumes are optimized for Applicant Tracking Systems used by employers
+- **Real-time Preview**: See changes instantly as you edit your resume
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Data Persistence**: Save your resume data securely in the cloud
+- **Export Options**: Download your resume in multiple formats
+- **User Authentication**: Secure login and profile management
+- **Drag & Drop Interface**: Intuitive editing experience
 
-## Demo
-Check out the live demo here: https://resume-builder-2024.vercel.app/
+## 🛠️ Tech Stack
 
-Screenshots
-### 1.Landing Page
-![image](https://github.com/AbhijitKhyade/Resume-Builder-MERN/assets/129264746/147f3767-177b-4201-bfd7-e327233d89c1)
+- **Frontend**: React.js, Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Routing**: React Router
+- **HTTP Client**: Axios
+- **State Management**: Redux with Redux Toolkit
+- **Icons**: Lucide React (if used)
 
-### 2.Education Section
-![image](https://github.com/AbhijitKhyade/Resume-Builder-MERN/assets/129264746/37f43087-fa50-4bd2-818d-82d3e764b2ee)
+## 📦 Installation
 
-### 3.Project Section
-![image](https://github.com/AbhijitKhyade/Resume-Builder-MERN/assets/129264746/c9be87c5-36a2-483c-9a27-99215321fbec)
-### 4.Resume Data
-![image](https://github.com/AbhijitKhyade/Resume-Builder-MERN/assets/129264746/11d307dd-b942-4ff0-a761-1c00726d6911)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Vishrut99/Resume_Maker.git
+   cd Resume_Maker
+   ```
 
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Technologies Used
-  Frontend: React.js, React Router, Axios, Bootstrap
-  Backend: Node.js, Express.js, MongoDB, Mongoose
-  Deployment: Vercel (Frontend), Heroku (Backend), MongoDB Atlas (Database)
+3. **Set up environment variables**
+   Create a `.env` file in the root directory and add:
+   ```env
+   REACT_APP_BASE_URL=your_backend_api_url
+   REACT_APP_API_KEY=your_api_key_if_needed
+   ```
 
-## Features
-  1)User authentication (register, login, logout)
-  2)Create, update, and delete resume sections
-  3)Responsive design for mobile and desktop
-  4)Secure data storage using MongoDB Atlas
-  5)Download resume pdf and edit is available
-  6)Two Professional Like Resume Formats
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-## Installation
-To run this project locally, follow these steps:
+5. **Open your browser**
+   Navigate to `http://localhost:3000`
 
-Clone the repository:
-  git clone https://github.com/your-username/resume-builder.git
-  Install dependencies for both frontend and backend:
+## 🏗️ Project Structure
 
-cd client
-npm install
-cd ../server
-npm install
+```
+Resume_Maker/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── LandingPage.jsx
+│   │   └── ...
+│   ├── redux/
+│   │   ├── store.js
+│   │   ├── educationSlice.js
+│   │   ├── profileSlice.js
+│   │   ├── projectSlice.js
+│   │   ├── experienceSlice.js
+│   │   └── extraDetailsSlice.js
+│   ├── assets/
+│   │   ├── img1.jpg
+│   │   ├── img2.jpg
+│   │   └── img3.jpg
+│   ├── api/
+│   │   └── index.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-Set up environment variables:
+## 🎯 Usage
 
-Create a .env file in the backend directory.
-Add your MongoDB connection URI, JWT secret, and any other necessary variables.
+1. **Sign Up/Login**: Create an account or log in to access the resume builder
+2. **Choose Template**: Select from our professional resume templates
+3. **Add Information**: Fill in your:
+   - Personal profile information
+   - Educational background
+   - Work experience
+   - Projects
+   - Skills
+   - Achievements
+   - Extra-curricular activities
+4. **Preview**: See real-time preview of your resume
+5. **Export**: Download your completed resume
 
-Start the development servers:
-## Start backend server (runs on http://localhost:8080)
-cd server
-npm start
+## 🔧 Available Scripts
 
-## Start frontend development server (runs on http://localhost:3000)
-cd client
-npm start
-Open your browser and navigate to http://localhost:3000 to view the application.
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## 📱 Responsive Design
+
+The application is fully responsive and works on:
+- Desktop (1200px and above)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🔐 Authentication
+
+The app includes secure user authentication with:
+- User registration and login
+- JWT token-based authentication
+- Protected routes
+- Session management
+
+## 💾 Data Management
+
+- **Redux Store**: Centralized state management for all resume data
+- **API Integration**: Seamless backend integration for data persistence
+- **Auto-save**: Automatic saving of user progress
+- **Data Validation**: Input validation and error handling
+
+## 🎨 Templates
+
+Currently available templates:
+- **Executive**: Clean and professional design
+- **Modern**: Creative and elegant layout
+- **Classic**: Traditional and formal structure
+
+## 🚦 API Endpoints
+
+The application integrates with backend APIs for:
+- User authentication
+- Resume data storage and retrieval
+- Template management
+- Export functionality
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🐛 Bug Reports
+
+If you encounter any bugs or issues, please report them on the [Issues](https://github.com/Vishrut99/Resume_Maker/issues) page.
+
+## 📧 Contact
+
+- **Developer**: Vishrut
+- **GitHub**: [@Vishrut99](https://github.com/Vishrut99)
+- **Project Link**: [https://github.com/Vishrut99/Resume_Maker](https://github.com/Vishrut99/Resume_Maker)
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped improve this project
+- Inspiration from modern resume builders and design patterns
+- Open source community for tools and libraries used
+
+## 🔮 Future Enhancements
+
+- [ ] More resume templates
+- [ ] PDF export functionality
+- [ ] Resume sharing capabilities
+- [ ] AI-powered content suggestions
+- [ ] Integration with job boards
+- [ ] Multi-language support
+- [ ] Dark mode theme
+- [ ] Resume analytics and tips
+
+---
+
+⭐ **Star this repository if you find it helpful!**
