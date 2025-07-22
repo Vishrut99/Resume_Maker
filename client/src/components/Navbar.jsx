@@ -143,7 +143,7 @@ const Navbar = () => {
               fontWeight: "600",
             }}
           >
-            <Link to={'/'} className="resume-builder-link"> RESUME BUILDER</Link>
+            <Link to={'/'} className="resume-builder-link"> RESUME Maker</Link>
           </Typography>
 
           {currentUser ? (

@@ -75,7 +75,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="bg-slate-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl md:text-2xl font-bold text-slate-800">ResumeBuilder</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-slate-800">ResumeMaker</h1>
           <nav className="hidden md:flex space-x-6">
             <a href="#features" className="text-slate-600 hover:text-slate-800">Features</a>
             <a href="#templates" className="text-slate-600 hover:text-slate-800">Templates</a>
@@ -198,7 +198,7 @@ export default function LandingPage() {
       <section className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Why Choose Our Resume Builder?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Why Choose Our Resume Maker?</h3>
             <p className="text-lg md:text-xl text-slate-600">Professional tools designed to help you land your dream job</p>
           </div>
 
@@ -252,14 +252,14 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-xl font-bold mb-4">ResumeBuilder</h4>
+              <h4 className="text-xl font-bold mb-4">ResumeMaker</h4>
               <p className="text-slate-300 text-sm">Professional resume building platform trusted worldwide.</p>
             </div>
             <div>
               <h5 className="font-semibold mb-4">Product</h5>
               <ul className="space-y-2 text-sm text-slate-300">
                 <li><a href="#" className="hover:text-white">Templates</a></li>
-                <li><a href="#" className="hover:text-white">Builder</a></li>
+                <li><a href="#" className="hover:text-white">Maker</a></li>
                 <li><a href="#" className="hover:text-white">Cover Letters</a></li>
               </ul>
             </div>
@@ -281,7 +281,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400 text-sm">
-            <p>&copy; 2024 ResumeBuilder. All rights reserved.</p>
+            <p>&copy; 2024 ResumeMaker. All rights reserved.</p>
           </div>
         </div>
       </footer>
