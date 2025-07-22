@@ -1,27 +1,71 @@
-# Resume Builder
+# Resume Maker — ATS-Friendly Resume Builder
 
-A professional, modern resume builder application that helps users create ATS-friendly resumes with ease. Built with React and Redux, featuring multiple professional templates and a user-friendly interface.
+[![React](https://img.shields.io/badge/Built%20With-React-blue?logo=react)](https://reactjs.org/)
+[![Redux Toolkit](https://img.shields.io/badge/State-Redux%20Toolkit-purple?logo=redux)](https://redux-toolkit.js.org/)
+[![Tailwind](https://img.shields.io/badge/Styling-Tailwind%20CSS-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
+[![GitHub Issues](https://img.shields.io/github/issues/Vishrut99/Resume_Maker)](https://github.com/Vishrut99/Resume_Maker/issues)
 
-## 🚀 Features
+> A sleek, professional and intuitive resume builder optimized for **Applicant Tracking Systems** and modern design standards.
 
-- **Professional Templates**: Multiple hand-crafted resume templates optimized for different industries
-- **ATS-Friendly**: Resumes are optimized for Applicant Tracking Systems used by employers
-- **Real-time Preview**: See changes instantly as you edit your resume
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Data Persistence**: Save your resume data securely in the cloud
-- **Export Options**: Download your resume in multiple formats
-- **User Authentication**: Secure login and profile management
-- **Drag & Drop Interface**: Intuitive editing experience
+---
 
-## 🛠️ Tech Stack
+## ✨ Features
 
-- **Frontend**: React.js, Redux Toolkit
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Routing**: React Router
-- **HTTP Client**: Axios
-- **State Management**: Redux with Redux Toolkit
-- **Icons**: Lucide React (if used)
+- 🎨 **Professional Templates** — Elegant layouts for all professions
+- 🧠 **ATS-Optimized** — Pass the resume scanners with ease
+- 🔁 **Real-Time Preview** — Instant updates as you type
+- 💾 **Auto-Save & Cloud Storage** — Resume saved automatically
+- 📲 **Responsive Design** — Works across all devices
+- 📥 **Export Options** — Multiple format support (coming soon)
+- 🔒 **Secure Auth** — JWT-based login system
+- 🖱️ **Drag & Drop Interface** — Effortless editing
+
+---
+
+## 🖥️ Tech Stack
+
+| Area         | Tech Used                             |
+|--------------|----------------------------------------|
+| Frontend     | ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) |
+| State        | ![Redux Toolkit](https://img.shields.io/badge/-Redux%20Toolkit-764abc?logo=redux&logoColor=white) |
+| Styling      | ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38BDF8?logo=tailwindcss&logoColor=black) |
+| Animations   | ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-e52e71?logo=framer&logoColor=white) |
+| Icons        | ![Lucide React](https://img.shields.io/badge/-Lucide%20React-000?logo=lucide&logoColor=white) |
+| Routing      | ![React Router](https://img.shields.io/badge/-React%20Router-ca4245?logo=reactrouter&logoColor=white) |
+| HTTP Client  | ![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white) |
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+  <img width="1883" height="864" alt="image" src="https://github.com/user-attachments/assets/c29084f9-c1eb-4a67-a9c7-9d55af49918d" />
+  <img width="1900" height="820" alt="image" src="https://github.com/user-attachments/assets/c61e2135-eefc-48cb-ac67-b6ab890d6ec8" />
+
+
+</div>
+
+---
+
+## 📦 Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Vishrut99/Resume_Maker.git
+cd Resume_Maker
+
+# 2. Install dependencies
+npm install
+
+# 3. Configure environment variables
+touch .env
+# Add the following to .env
+REACT_APP_BASE_URL=your_backend_url
+REACT_APP_API_KEY=your_api_key_if_any
+
+# 4. Start development server
+npm start
+
 
 ## 📦 Installation
 
