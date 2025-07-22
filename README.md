@@ -148,9 +148,6 @@ The application integrates with backend APIs for:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🐛 Bug Reports
 
@@ -158,8 +155,8 @@ If you encounter any bugs or issues, please report them on the [Issues](https://
 
 ## 📧 Contact
 
-- **Developer**: Vishrut
-- **GitHub**: [@Vishrut99](https://github.com/Vishrut99)
+- **Developer**: Vishrut & Raj
+- **GitHub**: [@Vishrut99](https://github.com/Vishrut99) & [@RajBorad1729](https://github.com/RajBorad1729)
 - **Project Link**: [https://github.com/Vishrut99/Resume_Maker](https://github.com/Vishrut99/Resume_Maker)
 
 ## 🙏 Acknowledgments
