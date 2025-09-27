@@ -7,12 +7,22 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [],
+      output: {
+        manualChunks: undefined,
+      },
     },
     commonjsOptions: {
-      transformMixedEsModules: true
-    }
+      transformMixedEsModules: true,
+      include: [/node_modules/]
+    },
+    target: 'esnext',
+    minify: 'terser'
   },
   optimizeDeps: {
-    include: ['react', 'react-dom']
+    include: ['react', 'react-dom'],
+    force: true
+  },
+  define: {
+    global: 'globalThis',
   }
 })
