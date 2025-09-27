@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'esnext',
-    minify: 'terser'
+    minify: true
   },
   optimizeDeps: {
     include: ['react', 'react-dom'],
