@@ -19,10 +19,15 @@ export default defineConfig({
     minify: 'terser'
   },
   optimizeDeps: {
-    include: ['react', 'react-dom'],
+    include: ['react', 'react-dom', 'jspdf', 'dompurify'],
     force: true
   },
   define: {
     global: 'globalThis',
+  },
+  resolve: {
+    alias: {
+      'dompurify': 'dompurify/dist/purify.min.js'
+    }
   }
 })

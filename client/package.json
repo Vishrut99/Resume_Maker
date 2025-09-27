@@ -29,6 +29,7 @@
     "docxtemplater": "^3.47.4",
     "dom-to-image": "^2.6.0",
     "dom-to-pdf": "^0.3.2",
+    "dompurify": "^3.0.5",
     "file-saver": "^2.0.5",
     "firebase": "^10.14.1",
     "framer-motion": "^11.2.6",
