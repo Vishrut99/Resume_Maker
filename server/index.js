@@ -16,7 +16,7 @@ mongoDB();
 
 //middlewares
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: process.env.CLIENT_URL || 'http://localhost:5173',
     credentials: true,
 };
 
@@ -42,7 +42,8 @@ app.use((err, req, res, next) => {
 });
 
 
-app.listen(process.env.PORT, () => {
-     console.log(`Server is working on https://resume-builder-mern-eight.vercel.app:${process.env.PORT}`);
-    // console.log(`Server is working on http://localhost:${process.env.PORT}`);
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });

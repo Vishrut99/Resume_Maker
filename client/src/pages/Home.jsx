@@ -12,6 +12,7 @@ const Home = () => {
   const [activeComponent, setActiveComponent] = useState("profile");
   const navigate = useNavigate();
   const [showWelcome, setShowWelcome] = useState(false);
+  console.log("Rendering Home.jsx", activeComponent);
 
   //handling next
   const handleNext = () => {
