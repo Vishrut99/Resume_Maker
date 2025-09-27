@@ -15,12 +15,11 @@ dotenv.config();
 mongoDB();
 
 //middlewares
-const corsOptions = {
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+const allowedOrigins = [process.env.CLIENT_URL, 'http://localhost:5173'].filter(Boolean);
+app.use(cors({
+    origin: allowedOrigins,
     credentials: true,
-};
-
-app.use(cors(corsOptions));
+}));
 
 app.use(express.json());
 
@@ -28,6 +27,11 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/data', resumeRoutes);
+
+// basic health endpoint
+app.get('/', (req, res) => {
+    res.status(200).send('OK');
+});
 
 //middleware for logging
 app.use((req, res, next) => {
