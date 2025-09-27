@@ -19,7 +19,7 @@ export default defineConfig({
     minify: 'terser'
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'jspdf', 'dompurify'],
+    include: ['react', 'react-dom', 'jspdf', 'dompurify', 'canvg', 'svg2pdf.js'],
     force: true
   },
   define: {
