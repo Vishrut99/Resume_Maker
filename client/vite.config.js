@@ -5,29 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    rollupOptions: {
-      external: [],
-      output: {
-        manualChunks: undefined,
-      },
-    },
-    commonjsOptions: {
-      transformMixedEsModules: true,
-      include: [/node_modules/]
-    },
     target: 'esnext',
     minify: 'terser'
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'jspdf', 'dompurify', 'canvg', 'svg2pdf.js'],
-    force: true
+    include: ['react', 'react-dom'],
   },
   define: {
     global: 'globalThis',
   },
-  resolve: {
-    alias: {
-      'dompurify': 'dompurify/dist/purify.min.js'
-    }
-  }
+  // No special resolve aliases needed now
 })

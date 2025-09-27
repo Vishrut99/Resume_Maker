@@ -14,9 +14,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import moment from "moment";
 import html2canvas from 'html2canvas';
-import { jsPDF } from 'jspdf';
-// import { saveAs } from "file-saver";
-import html2pdf from "html2pdf.js";
+// Use html2pdf from CDN global (window.html2pdf)
 import Feedback from "../Feedback";
 
 export default function Template1() {
@@ -54,7 +52,7 @@ export default function Template1() {
           // pagebreak: { mode: ['avoid-all', 'css', 'legacy'] } // Ensure proper page breaks
         };
 
-        html2pdf().set(opt).from(resumeContainer).save().then(() => {
+  (window.html2pdf || html2pdf)().set(opt).from(resumeContainer).save().then(() => {
           setLoading(false); // End loading state after PDF is generated
           setCongratsVisible(true); // Trigger Confetti effect
 
