@@ -33,6 +33,22 @@ app.get('/', (req, res) => {
     res.status(200).send('OK');
 });
 
+// api index endpoint for quick visibility
+app.get('/api', (req, res) => {
+    res.json({
+        status: 'ok',
+        message: 'Resume Builder API',
+        routes: [
+            { method: 'POST', path: '/api/auth/google-sign-in' },
+            { method: 'GET', path: '/api/user/get-user/:id', auth: true },
+            { method: 'PUT', path: '/api/user/update/:id', auth: true },
+            { method: 'POST', path: '/api/user/feedback', auth: true },
+            { method: 'POST', path: '/api/data/resume-data', auth: true },
+            { method: 'GET', path: '/api/data/get-all-resume-data', auth: true },
+        ],
+    });
+});
+
 //middleware for logging
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
