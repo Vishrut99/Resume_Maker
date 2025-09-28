@@ -75,7 +75,7 @@ export default function LandingPage() {
           </motion.h1>
           <nav className="hidden md:flex space-x-8">
             <a
-              href="#"
+              href="#features"
               className="text-gray-600 hover:text-blue-600 text-lg font-medium transition-all duration-300 hover:scale-105 relative group"
             >
               Features
@@ -356,7 +356,7 @@ export default function LandingPage() {
       </section>
 
       {/* Enhanced Features Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 relative overflow-hidden">
+      <section id="features" className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
@@ -459,7 +459,7 @@ export default function LandingPage() {
       </section>
 
       {/* Enhanced CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 py-20 relative overflow-hidden">
+      <section id="templates"className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
@@ -510,7 +510,7 @@ export default function LandingPage() {
       </section>
 
       {/* Enhanced Footer */}
-      <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
+      <footer id="contact" className="bg-gray-900 text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
